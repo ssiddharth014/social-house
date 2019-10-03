@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "keywords": [
     "social"
@@ -14,6 +13,7 @@
   "author": "siddharth kumar singh",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.7.1",
     "express": "^4.17.1"
   }
 }
