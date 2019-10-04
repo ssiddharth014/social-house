@@ -7,6 +7,17 @@ const expressLayouts= require('express-ejs-layouts');
 
 app.use(expressLayouts);
 
+
+
+//extract styles and scripts for sub pages
+app.set('layout extractStyles',true);
+
+app.set('layout extractScripts',true);
+
+// set up of static files
+
+app.use(express.static('./assets'));
+
  // middleware : use express router 
 app.use('/',require('./routes/index'));
 
@@ -18,7 +29,7 @@ app.set('views','./views');
 app.listen(port,function(err,){
 
     if (err){
-        cdconsole.log(`error in running the server : ${err}`);
+        console.log(`error in running the server : ${err}`);
     }
 
 
