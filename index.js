@@ -10,7 +10,7 @@ const cookieParser=require('cookie-parser');
 
 
 
-app.use(express.urlencoded();
+app.use(express.urlencoded());
 
 app.use(cookieParser);
 
