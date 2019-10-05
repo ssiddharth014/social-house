@@ -4,6 +4,7 @@ mongoose.connect('mongodb://localhost/social-house__development');
 
 const db=mongoose.connection;
 
+
 db.on('error',console.error.bind(console,"error in connecting to mongodb"));
 
 
