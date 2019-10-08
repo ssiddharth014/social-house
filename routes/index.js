@@ -8,13 +8,19 @@ const router=express.Router();
 const homeController=require('../controllers/home_controller');
 
 
+//6
+router.use('/users',(require('./users')));
+
+//for any other router access from here
+//router.use('/routerName',require('./routerFile'))
+
 
 
 //5
 router.get('/',homeController.home);
 
 //6
-router.use('/users',require('./users'));
+//router.use('/users',require('./users'));
 
 //for any other router access from here
 //router.use('/routerName',require('./routerFile'))
